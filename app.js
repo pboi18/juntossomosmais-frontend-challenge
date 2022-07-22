@@ -4,7 +4,7 @@ const axios = require('axios');
 const cors = require('cors');
 require('dotenv').config();
 
-const port = 3000;
+const port = precess.env.PORT || 3000;
 app.use(
   cors({
     origin: '*',
