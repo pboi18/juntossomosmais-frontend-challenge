@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/juntossomosmais_icon.png"
+    />
+    <title>JUNTOSSOMOS</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Kits -->
+    <script
+      src="https://kit.fontawesome.com/d2bcdc4b61.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="section">
+      <nav class="navbar navbar-bg">
+        <div class="container">
+          <div class="logo navbar-brand">
+            <a href="javascript:void(0)"
+              ><img
+                src="./images/juntossomosmais_logo.png"
+                alt="JUNTOSSOMOS LOGO"
+            /></a>
+          </div>
+
+          <form action="" class="input-search border border-dark rounded-pill px-2 py-1">
+            
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input
+                class="border-0 form-cotrol px-1
+                input-search-box"
+                type="search"
+                id="search"
+                placeholder=" Search"
+                aria-label="Search"
+              />
+           
+          </form>
+
+          <div class="nothing-for-now1 border border-dark"></div>
+
+          <div class="nothing-for-now2 border border-dark"></div>
+        </div>
+        
+        </div>
+      </nav>
+      <main class="mt-4">
+        <div class="container">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb nav-breadcrumb">
+              <li class="breadcrumb-item"><a class="nav-breadcrumb-link" href="javascript:void(0)">Home</a></li>
+              <li class="breadcrumb-item"><a class="nav-breadcrumb-link" href="javascript:void(0)">User</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Details</li>
+            </ol>
+          </nav>
+          <h2 class="fw-bold">Lista de membros</h2>
+          <div class="users-page mt-4">
+            <div class="filter card">
+              <div class="card-body">
+                <h5 class="card-title">By State</h5>
+                <div class="card-text">
+                  <input type="checkbox" name="sao-paulo" id="sao-paulo">
+                  <label for="sao-paulo">Sao Paulo</label>
+                </div>
+                <div class="card-text">
+                  <input type="checkbox" name="rio-de-janeiro" id="rio-de-janeiro">
+                  <label for="rio-de-janeiro">Rio De Jaaneiro</label>
+                </div>
+
+                <div class="card-text">
+                  <input type="checkbox" name="minas-gerals" id="minas-gerals">
+                  <label for="minas-gerals">Minas Gerals</label>
+                </div>
+                <div class="card-text">
+                  <input type="checkbox" name="espirito-santo" id="espirito-santo">
+                  <label for="espirito-santo">Espirito Santo</label>
+                </div>
+                
+                <div class="card-text">
+                  <input type="checkbox" name="bahia" id="bahia">
+                  <label for="bahia">Bahia</label>
+                </div>
+                
+
+                <span><a href="javascript:void(0)">See all</a></span>
+              </div>
+            </div>
+            <div class="user-list">
+              <div class="card mb-3">
+                <div class="card-body sort-by">
+                  <p class="item-numbers m-0">Displaying 9 of 25 items</p>
+                  <div class="sort">
+                    <label class="fw-500" for="users">Sort by:</label>
+                    <select class="border-0" name="user" id="users">
+                      <option value="name">Name</option>
+                      <option value="country">Country</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card-container">
+                <div class="card-content" id="user-card-container">
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves1</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves2</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves3</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves4</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves5</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves6</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves7</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves8</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves9</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves10</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves11</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves12</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves13</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves14</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves15</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves16</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves17</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves18</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves18</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                </div>
+                <template data-user-template>
+                  <div class="user-card">
+                    <div class="contain-card">
+                      <div class="card-image">
+                        <img src="/images/user1 1.png" alt="">
+                      </div>
+                      <div class="card-info">
+                        <h5>Joselino Alves9</h5>
+                        <p>Rua Espírito Santo, 2096</p>
+                        <p>São José de Ribamar Paraná -CEP: 96895</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </template>
+
+                <div class="page">
+                  <!-- <li class="page-item previous-page disable">
+                    <a class="page-links fa-solid fa-angle-left" href="javascript:void(0)">
+                    </a>
+                  </li>
+                  <li class="page-item current-page active-page">
+                    <a class="page-links" href="javascript:void(0)">1</a>
+                  </li>
+                  <li class="page-item current-page">
+                    <a class="page-links" href="javascript:void(0)">2</a>
+                  </li>
+                  
+                  <li class="page-item current-page">
+                    <a class="page-links" href="javascript:void(0)">3</a>
+                  </li>
+                  <li class="page-item next-page">
+                    <a class="page-links fa-solid fa-angle-right" href="javascript:void(0)"></a>
+                  </li> -->
+                </div>
+              </div>
+
+              <!-- <div aria-label="Page navigation">
+                <ul class="pagunation">
+                  <li class="page-item">
+                    <a href="javascript:void(0)" class="page-link"></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:void(0)" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <footer class="footer mt-auto py-4 bg-dark">
+      <img class="footer-logo" src="./images/Logo.png" alt="Juntos Logo">
+      <p>Juntos Somos Mais Fidelização S.A.</p>
+      <p class="footer-info">Siga-nos nas redes sociais:</p>
+      <ul class="footer-socials">
+        <li>
+          <a href="javascript:void(0)">
+            <img src="./images/Facebook.png" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <img src="./images/Whatsapp.png" alt="Whatsapp">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <img src="./images/LinkedIn.png" alt="LinkedIn">
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- JQuery JavaScript-->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.js"
+      integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript-->
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>

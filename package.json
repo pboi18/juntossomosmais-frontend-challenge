@@ -1,0 +1,25 @@
+{
+  "name": "juntossomosmais-frontend-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pboi18/juntossomosmais-frontend-challenge.git"
+  },
+  "author": "LimitlessBG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pboi18/juntossomosmais-frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/pboi18/juntossomosmais-frontend-challenge#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
