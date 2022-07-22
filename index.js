@@ -122,7 +122,7 @@ const cardContent = document.getElementById('user-card-container');
 
 const userCardTemplate = document.querySelector('[data-user-template]');
 
-fetch('http://localhost:3000/frontend-challenge.json')
+fetch('https://jsm-challenges.herokuapp.com/frontend-challenge.json')
   .then(res => res.json())
   .then(data => {
     console.log(data);
