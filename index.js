@@ -1,15 +1,29 @@
 'use strict';
-
-// JS For Search Input
-const search = document.getElementById('search');
-search.addEventListener('input', e => {
-  const value = e.target.value;
-  console.log(value);
-});
-// JS For API
-
 const userCardContainer = document.querySelector('[data-user-card-container]');
 const userCardTemplate = document.querySelector('[data-user-template]');
+const search = document.getElementById('search');
+
+// JS For Search Input
+
+let elements = [];
+
+search.addEventListener('input', e => {
+  const value = e.target.value.toLowerCase();
+
+  elements.forEach(element => {
+    const isVisible =
+      element.name.title.toLowerCase().includes(value) ||
+      firstName.toLowerCase().includes(value) ||
+      lastName.toLowerCase().includes(value) ||
+      streetLocation.toLowerCase().includes(value) ||
+      stateLocation.toLowerCase().includes(value) ||
+      cityLocation.toLowerCase().includes(value) ||
+      postcode.toLowerCase().includes(value);
+    element.element.classList.toggle('hide', !isVisible);
+  });
+});
+
+// JS For API
 
 fetch('https://jsm-challenges.herokuapp.com/frontend-challenge.json')
   .then(res => res.json())
@@ -18,27 +32,42 @@ fetch('https://jsm-challenges.herokuapp.com/frontend-challenge.json')
     const user = users[0];
     // console.log(user.length);
 
-    user.forEach(element => {
+    elements = user.map(element => {
       const card = userCardTemplate.content.cloneNode(true).children[0];
 
       const userCardImage = card.querySelector('[user-image]');
       const userCardName = card.querySelector('[user-name]');
       const userCardAdress = card.querySelector('[user-address]');
       const userCardState = card.querySelector('[user-state]');
+      const title = element.name.title;
+      const firstName = element.name.first;
+      const lastName = element.name.last;
+      const streetLocation = element.location.street;
+      const stateLocation = element.location.state;
+      const cityLocation = element.location.city;
+      const postcode = element.location.postcode;
 
       userCardImage.src = element.picture.medium;
 
-      userCardName.textContent = `${element.name.title} ${element.name.first} ${element.name.last}`;
+      userCardName.textContent = `${title} ${firstName} ${lastName}`;
 
-      userCardAdress.textContent = `${element.location.street}`;
+      userCardAdress.textContent = `${streetLocation}`;
 
-      userCardState.textContent = `${element.location.state} ${element.location.city} -CEP: ${element.location.postcode}`;
+      userCardState.textContent = `${stateLocation} ${cityLocation} -CEP: ${postcode}`;
 
       userCardContainer.append(card);
-      console.log(card);
+      return {
+        title: element.name.title,
+        firstName: element.name.first,
+        lastName: element.name.last,
+        address: element.location.street,
+        state: element.location.state,
+        city: element.location.city,
+        postcode: element.location.postcode,
+        userElement: card,
+      };
     });
   });
-
 // JQuery For Pagination
 
 function getPageList(totalPages, page, maxLength) {
@@ -77,7 +106,7 @@ function getPageList(totalPages, page, maxLength) {
 }
 
 $(function () {
-  const numberOfItems = $('.card-content .user-card').length;
+  const numberOfItems = 200;
   const limitPerPage = 9; //How many card items visible per a page
   const totalPages = Math.ceil(numberOfItems / limitPerPage);
   const paginationSize = totalPages; //How many page elements visible in the pagination
